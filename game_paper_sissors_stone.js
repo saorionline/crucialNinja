@@ -5,13 +5,27 @@
     this.right = right;
 }
 */
-const rock = "Stone";
-const origami = "Paper";
-const ninja_star = "Scissors"
-let outcome = "user_wins";
+var robot = "Dragon";
+var name = "Diana";
 
-if (outcome === "user_wins") {
-    console.log(`The best is ${name}`);
-} else if (outcome === "robot_wins") {
-    console.log(`This time ${robot} wins just luckily`)
-} 
+const stone = "Rock";
+const paper = "Origami";
+const scissors = "Ninja Star";
+
+let fight = function (robot, name) {
+    if (robot != name) {
+        if (robot === stone && name === paper) {
+            console.log (`User won with ${paper}`)
+        } else if (robot === paper && name === scissors) {
+            console.log (`${scissors} the user took were inevitable`)
+        } else if ( robot === scissors && name === stone) {
+            console.log (`${name} is rampaging the ${robot} with ${stone}`)
+        } else {
+            console.log (`${robot} finally learned from ${name}`)
+        }
+    }
+}
+
+fight (stone, paper)
+
+
