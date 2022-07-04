@@ -5,8 +5,6 @@
     this.right = right;
 }
 */
-var robot = "Dragon";
-var name = "Diana";
 
 const stone = "Rock";
 const paper = "Origami";
