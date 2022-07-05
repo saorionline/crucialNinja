@@ -1,5 +1,5 @@
 //Objetos se denominan con propiedad y las propiedades son con palabras clave y valores
-var desk = {
+var library_desk = {
     primary_bottom: "Zona A",
     secondary_bottom: "Zona B",
     building_date: 2002,
@@ -10,9 +10,9 @@ var desk = {
 // para llamar los objetos dentro del array usamos []
 // para los objetos usamos .nombredelobjeto
 
-console.log(desk);
-console.log(desk.primary_bottom);
-console.log(desk.cleanDesk());
+console.log(library_desk);
+console.log(library_desk.primary_bottom);
+console.log(library_desk.cleanDesk());
 
 //Así ya entiendo que es un objeto y cómo lo puedo construir, esto es más manual.
 
