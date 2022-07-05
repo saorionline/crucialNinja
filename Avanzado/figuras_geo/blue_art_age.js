@@ -71,4 +71,23 @@ console.log(`The total perimeter of the triangle is ${trianglePerimeter} cm`);
 
 console.log(`The area of this triangle is ${triangleArea} cm^2` );
 */
- 
+  
+// Cuando se haga click en el botón Calculate Perimeter se hace un llamado a una funciòn en JS
+
+function squareCalcuPerimt() {
+    //entrar a lo que dice el input 
+    const input = document.getElementById('square');
+    //seleccionar solamente el numero
+    const value = input.value;
+    //crear un alert diciendo cuál es el perimetro
+    const alerPerim = squarePerimtr(value);
+    alert(alerPerim);
+}
+
+function squareCalcuArea() {
+    const input = document.getElementById('square');
+    const value = input.value;
+    const alerArea = squrArea(value);
+    alert(alerArea);
+    
+}
