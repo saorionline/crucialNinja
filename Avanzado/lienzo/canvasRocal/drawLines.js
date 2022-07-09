@@ -14,21 +14,19 @@ function drawDigitaly( color, initialx, initialy, finalx, finaly)
     digitalFabric.closePath();
 }
 */
-// Ahora vamos a hacer un ciclo
+// Ahora vamos a hacer un ciclo i = (i + 2) ===>>> i++  while(i<lines) ---> for(i=0;i<lineas,i++)
 
 const lines = 30;
-var i = 0;
 var yi, xf;
-
-while(i < lines)
+var primar = "#BB8FCE";
+for( i = 0; i < lines; i++)
 {
     yi = 10 * i;
     xf = 10 * (i+1);
-    drawDigi("#BB8FCE", 0, yi, xf, 300);
+    drawDigi(primar, 300, yi, xf, 1);
     console.log(`Line ${i}`);
-    i = (i + 1);
 }
-
+drawDigi(primar, 1, 1, 300, 1)
 function drawDigi( color, initialx, initialy, finalx, finaly)
 {
     digitalFabric.beginPath();
