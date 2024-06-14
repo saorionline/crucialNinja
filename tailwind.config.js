@@ -1,8 +1,10 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: [
+	'./src/**/*.html',
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {
+	  extend: {
 		  backgroundImage: {
 			  'sanFrancisco': "url('../img/sanFrancisco.jpg')",
 			  'sanFranciscoDesktop': "url('../img/sanFranciscoDesktop.jpg')",
@@ -43,9 +45,5 @@ module.exports = {
 		extend: {
 	 },
   },
-  content: [
-    "./public/**/*.{png, jpg, css, svg}", 
-    "./src/**/*.css"
-  ], 
+  plugins: [],
 }
-
